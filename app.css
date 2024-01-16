@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+#header {
+    width: 100%;
+    
+}
+
+.container {
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#headerName {
+    font-size: 2.5rem;
+    line-height: 1; /* Adjusted line height to align vertically in the middle */
+    display: flex;
+    margin-top: 3rem;
+    font-weight: lighter;
+    font-family: Montserrat,sans-serif;
+    
+    padding-left: 50px;
+    
+}
+
+#mainList {
+    flex: 4 1;
+    margin-top: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Align items vertically in the flex container */
+
+    /* Additional adjustments for better spacing */
+    margin-right: 2.5rem;
+    margin-left: 10rem;
+    padding-top: 30px;
+    color:black;
+    font-size: large;
+}
+li a{
+    color:rgb(31, 27, 27);
+    text-decoration: none;
+    position: relative; /* Added relative positioning */
+
+}
+
+li a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0033ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    transform-origin: bottom right; /* Added transform-origin to make the animation start from the right */
+
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+#split{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* About Me */
+#about{
+    padding: 0px 0;
+    
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+.about-para{
+    font-size: larger;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.tab-links:hover{
+    transform: scale(1.1);
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0033ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    transform-origin: bottom right; /* Added transform-origin to make the animation start from the right */
+
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #0033ff;
+    font-size: 16px;
+
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+
+
+
+/* projects */
+.projectRow {
+    text-align: center;
+    background: #f1f3f2;
+    color: black;
+    margin: 5rem auto;
+    padding: 1rem 4rem;
+    overflow: visible;
+    width: 50%;
+    height: auto; /* Adjusted height to auto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; /* Added border-radius for rounded corners */
+}
+
+.projectTitle {
+    font-size: 24px; /* Adjusted font size for the project title */
+    margin-bottom: 10px;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column; /* Change to column layout for centering */
+    align-items: center; /* Center align the content */
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.subProjectTitle {
+    text-align: center;
+}
+
+.projectPos, .whenWhere {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.projectDetails {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    
+}
+
+/* Adjustments for better bullets */
+.projectDetails ul li {
+    margin-top: 10px;
+}
+
+.sub-titleProjects{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+
+
+/* 
+#projects{
+
+    width: 60rem;
+    height: 400rem;
+    margin: auto;
+}
+.projectRow{
+    text-align: center;
+    background: #f1f3f2;
+    color: black;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: visible;
+    width: 85%;
+    height: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* portfolio */
+/* work */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 100%; /* Set a specific height */
+    /* object-fit: cover; */
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #1d43ea);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.work p{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Research */
+.researchRow {
+    text-align: center;
+    background: #f1f3f2;
+    color: black;
+    margin: 5rem auto;
+    padding: 1rem 4rem;
+    overflow: visible;
+    width: 50%;
+    height: auto; /* Adjusted height to auto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; /* Added border-radius for rounded corners */
+}
+
+.researchTitle {
+    font-size: 24px; /* Adjusted font size for the project title */
+    margin-bottom: 10px;
+}
+
+.researchInfo {
+    display: flex;
+    flex-direction: column; /* Change to column layout for centering */
+    align-items: center; /* Center align the content */
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.subResearchTitle {
+    text-align: center;
+}
+
+.researchPos, .whenWhereResearch {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.whenWhereResearch{
+    margin-left: 50px;
+}
+
+.researchDetails {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    
+}
+
+/* Adjustments for better bullets */
+.researchDetails ul li {
+    margin-top: 10px;
+}
+
+.sub-titleResearch{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: black;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icons a:hover{
+
+    color: #0033ff;
+    transform: translateY(-5px);
+}
+.btn{
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+.btn.btn2:hover{
+    border-color: #0033ff;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+}
+.copyright i{
+    color: white;
+}
+#msg{
+    color: black;
+    margin-top: -20px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for small screens */
+nav .fas{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    /* .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    } */
+    /* nav #mainList {
+        display: none;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul{
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    } */
+    /* nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    li a{
+        color: white;
+    } */
+
+
+    nav #mainList {
+        display: none;
+    }
+
+    nav ul {
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    li a {
+        color: white;
+    }
+}

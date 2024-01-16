@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Mikeys Website</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7e9bc62d5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <h1 id="headerName"> Michael Cavins </h1>
+            <ul id="mainList">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <hr id="split">
+</div>
+<!-- About Me -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/home/macavins/Desktop/Websites/Mikey Website/images/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-para"> Hi there, I'm Michael Cavins but everyone just calls me Mikey. Right now I work at SOV Securty with hardware security for Fort Irwin base in California. I have and still do freelancing for developing websites. I graduated from Cal Poly Pommona in 2021 with a B.A. in computer engineering. I was in clubs such as the Liquid Rocket Lab as lead thermocouple, Electric Formula 1 car as Battery Management System Member, and worked on the drone as the lead the payload design for my senior project. I have also taken online classes for AI development, app development, and website developmet. Lately I've been working on projects implementing what I have learned in my AI classes. On my free time I like to watch movies/shows and going out with my girlfriend. I enjoy playing video games and competing in local fight game tournaments.  
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2016-2021</span><br>B.A. in Computer Engineering at Cal Poly Pomona</li>
+                        <li><span>2012-2016</span><br>High School Diploma at University Preparatory High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificates">
+                    <ul>
+                        <li><span>October 2023</span><br>Deep Learning Specialization by DeepLearning.AI on Coursera Certificate</li>
+                        <li><span>October 2023</span><br>Sequence Models by DeepLearning.AI on Coursera Certificate</li>
+                        <li><span>October 2023</span><br>Improving Deep Neural Networks: Hyperparameter
+                            Tuning, Regularization and Optimization by DeepLearning.AI on Coursera Certificate</li>
+                        <li><span>October 2023</span><br>Neural Networks and Deep Learning by DeepLearning.AI on Coursera Certificate</li>
+                        <li><span>October 2023</span><br>Convolutional Neural Networks</li>
+                        <li><span>October 2023</span><br>Structuring Machine Learning Projects</li>
+
+                        <li><span>2021</span><br>The Complete 2021 Flutter Development Bootcamp with Dart (App
+                            Development)</li>
+                        <li><span>October 2021</span><br>Electrical Systems: Communications and Data</li>
+                        <li><span>October 2021</span><br>Electronics Foundations: Basic Circuits</li>
+                        <li><span>October 2021</span><br>Learn Industrial Automation</li>
+                        <li><span>October 2021</span><br>Learning PLC Ladder Logic</li>
+                        <li><span>October 2021</span><br>PLC Ladder Logic Essential Training</li>
+                        <li><span>October 2021</span><br>PLC Memory Organization</li>
+                        <li><span>October 2021</span><br>PLC Program Flow and Control Instructions</li>
+                        <li><span>October 2021</span><br>PLC Sequencer Logic</li>
+                        <li><span>November 2020</span><br>Learning Virtualization (2014)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Skills Proficient in:</span><br>Python / Arduino / C++ / Java / C / LabView / Verilog / MATLAB / HTML / CSS / Javascript / PIC Assembly / Dart /
+                            AutoCAD / SQL scripting / PSPICE / EasyEDA / FPGAs / microcontrollers / Electrical Schematic Design / Electronic Circuit Designs / Solder /
+                            VLSI / Linux / Windows / PCB (Printed Circuit Board) Design / PLC (Programmable Logic Controllers) Design / RSLogix 500 / Artificial
+                            Intelligence / NLP / Machine Learning / CNN / C# / VHDL / EAGLE / LTspice / VMware</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<hr id="split">
+
+
+
+
+
+
+
+
+<!-- Projects -->
+<h1 class="sub-titleProjects" id="projects">Projects</h1>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">Reinforcement Learning AI for Street Fighter</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Individual Project</h4>
+            <h4 class="whenWhere">July 2023 - October 2023</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Developed a Python-based reinforcement learning program using PyTorch, OpenCV, MAMEToolkit, gym, tensorboard, cv2, numpy, and Baseline to create an Artificial intelligence (AI). Implemented algorithms such as PPO and A2C with architectures NoisyNet, GRU, and RNN with the objective of training the AI achieve victory in the highest difficulty level of the game</li>
+                <li>Conducted comprehensive evaluations of the AI’s performance by implementing a testing model. This model quantified the AI’s learning progress by adjusting rewards and penalties, allowing for a thorough assessment of 3,000 training attempts, running the program for 48 hours</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">Lane and Object Detection for Self Driving Car Program</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Individual Project</h4>
+            <h4 class="whenWhere">June 2023 - September 2023</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Developed python code for real-time vehicle camera utilization with OpenCV to ensure precise vehicle positioning within the lane’s center.</li>
+                <li>Employed YOLO for object detection with an 80% confidence level, referencing the COCO dataset, and integrated the Deep Sort algorithm powered by PyTorch for tracking and identification of other vehicles, pedestrians, and relevant objects</li>
+                <li>Implemented a steering wheel interface to visually represent the car’s turning movements, enhancing the visualization of the vehicles navigation</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">Cancer Prediction using Neural Network and Random Forest</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Individual Project</h4>
+            <h4 class="whenWhere">March 2023 - April 2023</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Created two machine learning programs using Jupyter Notebook employing libraries such as  sklearn, Tensorflow, NumPy, and Pandas. These programs effectively processed and classified RNA sequence gene expression data, distinguishing between 5 distinct types of cancers and facilitating comparisons within the dataset</li>
+                <li>Conducted a comprehensive analysis between the Random Forest and Neural Network approaches, determining that Random Forest exhibited superior speed, achieving an accuracy of 94%, while Neural Network outperformed in terms of accuracy, reaching 96%. This analysis was complimented by the visualization of the results through the creation of a graph in MATLAB</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">Hands Free Real Time Translator</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Individual Project</h4>
+            <h4 class="whenWhere">January 2023 - February 2023</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Developed a python-based Natural Language Processing (NLP) code capable of processing spoken English language input. The code interacts with the user by prompting for the desired target language for translation. Subsequently, it efficiently translated the spoken input i into the chosen language and articulates audibly, ensuring successful and effective communication</li>
+                <li>Enhanced the applications functionality by incorporating multiple versions, including GUI’s that have start/end buttons with English-to-single-language translation displaying words that were spoken and translated to give a better user experience</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">2-Axis Solar panel Phone Charger</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Individual Project</h4>
+            <h4 class="whenWhere">May2023 - August 2023</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Developed C++ code to command 2 servo motors for precise orientation adjustments of a solar panel  comparing values from four photoresistors, resu;ting in a 98% success rate</li>
+                <li>Achieved successful creation of a PCB design for a charging port, incorporating capacitors, resistors, and voltage regulator</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">Class Project: Automatic Refillable Water Tank</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Team Lead</h4>
+            <h4 class="whenWhere">August 2019 - December 2019</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Coordinated group members to assigned tasks to make sure we were on schedule finishing the project 2 weeks before the deadline</li>
+                <li>Headed the projects wiring design for the Ultrasonic Distance Sensor to connect to the driver and the pump so the components would not get wet, in the way of each other, and to be put in the most efficient way as possible</li>
+                <li>Assisted the Arduino team using C code to make sure the C code makes the Ultrasonic Distance Sensor works and detects the liquid at the 95% mark of the tank</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="projectRow">
+    <h3 class="projectTitle">SeaPerch</h3>
+    <div class="projectInfo">
+        <div class="subProjectTitle">
+            <h4 class="projectPos">Team Member</h4>
+            <h4 class="whenWhere">2014-2016</h4>
+        </div>
+    </div>
+    <div>
+        <div class="projectDetails">
+            <ul>
+                <li>Successfully designed an underwater ROV (Remotely Operated Vehicle), soldering a custom made controller to our assembled designed vehicle to be placed in top 3 in multiple competitions and making it to regionals</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+
+
+
+
+<hr id="split">
+
+<!-- Work -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/home/macavins/Desktop/Websites/Mikey Website/images/Hardware Security.jpg">
+                <div class="layer">
+                    <h3>Technician - SOV Security, Agoura Hills, CA - November 2021 - Present</h3>
+                    <p>Installed, troubleshoot, and IP cameras, card readers, door/ceiling sensors, and CISCO servers. Demonstrated leadership by taking charge of 2 projects and collaborating on 7 others, consistently delivering ahead of schedule with one project yielding a net gain of over $3 million</p>
+                    <p>Lead testing for over 200 card readers, 100 cameras, and 30 12V-24V batteries finishing 1 week before the deadline with paperwork and complete work orders as soon as possible which consist of troubleshooting hardware/software issues keeping 100% of equipment working</p>
+                    <p>Originated documentation for troubleshooting in Google Docs and schematic wiring in EasyEDA for employees to understand the system </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/home/macavins/Desktop/Websites/Mikey Website/images/website.jpg">
+                <div class="layer">
+                    <h3>Freelance Web Developer - Mama Loli’s Mexican Food, Hesperia, CA - June 2021 - August 2021</h3>
+                    <p>Created website in HTML, CSS, JavaScript, Node.js, and squareup so people can order online for the restaurant </p>
+                    <p>Maintained website with its layout (header, body, footer), added and fixed items, item descriptions, categories for items, and photos using HTML, and CSS to make the website more user friendly having a 12% increase in site traffic and +40% in sales                         
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/home/macavins/Desktop/Websites/Mikey Website/images/postmates.png">
+                <div class="layer">
+                    <h3>Delivery Person - Postmates, Pomona, CA - 2017</h3>
+                    <p>Be able to deliver food on time</p>
+                    <p>Was able to navigate to restaurants and to the delivery destination              
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<hr id="split">
+
+
+
+
+<!-- Research -->
+<h1 class="sub-titleResearch" id="research">Research</h1>
+<!-- Additional Project Row -->
+<div class="researchRow">
+    <h3 class="researchTitle">Autonomous Drone with Release of Payload</h3>
+    <div class="researchInfo">
+        <div class="subResearchTitle">
+            <h4 class="researchPos">Payload Lead </h4>
+            <h4 class="whenWhereResearch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pomona, CA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; September 2020 - May 2021 
+            </h4>
+        </div>
+    </div>
+    <div>
+        <div class="researchDetails">
+            <ul>
+                <li>Utilized AutoCAD to design and create a 3D-printed payload box, pin, and holder system for a drone. This innovative solution enabled the drone to securely hold and release up to 10 pounds of cargo</li>
+                <li>Developed wiring and C code in Arduino to orchestrate the servo motor, ensuring the accurate release of the payload at the designated locations, maintaining a margin of error of less than 5%</li>
+                <li>Composed a comprehensive Gantt Chart using excel and Google sheets to outline the projects teams timeline allowing for successful completion of the project 3 weeks ahead of schedule </li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="researchRow">
+    <h3 class="researchTitle">Formula Society of Automotive Engineers Electric</h3>
+    <div class="researchInfo">
+        <div class="subResearchTitle">
+            <h4 class="researchPos">Battery Management System (BMS) Member</h4>
+            <h4 class="whenWhereResearch">Cal Poly Pomona, CA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; October 2019 - September 2020
+            </h4>
+        </div>
+    </div>
+    <div>
+        <div class="researchDetails">
+            <ul>
+                <li>Led design and testing for the brake lights using EAGLE to ensure the car has functional brake lights</li>
+                <li>Assisted with input for the battery design by researching and brainstorming with team to ensure a safe, secure, light, and functional battery for the car</li>
+                <li>Collaborated with the whole team to make a powerpoint presentation in order to successfully obtain club funding of $20,000</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="researchRow">
+    <h3 class="researchTitle">Liquid Rocket Lab</h3>
+    <div class="researchInfo">
+        <div class="subResearchTitle">
+            <h4 class="researchPos">Engine Electronics/DAQ team member</h4>
+            <h4 class="whenWhereResearch">Cal Poly Pomona, CA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; August 2018 - August 2020
+        </div>
+    </div>
+    <div>
+        <div class="researchDetails">
+            <ul>
+                <li>Developed the control box wiring layout using PSPICE, soldering components to rocket/test stands and using LabView code to communicate with the sensors (e.i. Thermocouples, Pressure Transducers, Solenoids) to be able to collect crucial data for the rocket troubleshooting until we received high accuracy from the sensors</li>
+                <li>Oversaw thermocouple portion of project; tested temperatures from below freezing to extreme hot temperatures calibrating until we received accuracies of ± 1°C and had to be finished a month before launch day</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+<!-- Additional Project Row -->
+<div class="researchRow">
+    <h3 class="researchTitle">SeaPerch</h3>
+    <div class="researchInfo">
+        <div class="subResearchTitle">
+            <h4 class="researchPos">Team Member</h4>
+            <h4 class="whenWhereResearch">Victorville, CA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-2016 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <div>
+        <div class="researchDetails">
+            <ul>
+                <li>Successfully designed an underwater ROV (Remotely Operated Vehicle), soldering a custom made controller to our assembled designed vehicle to be placed in top 3 in multiple competitions and making it to regionals</li>
+            </ul>  
+        </div>
+        <!-- Add more details as needed -->
+    </div>
+</div>
+
+
+
+<hr id="split">
+
+
+
+
+
+
+
+
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>cavins50@hotmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>(760)490-4721</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/michael-cavins-574509126/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/macavins"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/cavinsm/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/CavinsMikey"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <a href="/home/macavins/Desktop/Websites/Mikey Website/images/CV 2023.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Michael Cavins. Made with <i class="fas fa-heart"></i>.</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<!-- <script>
+    var sidemeu = document.getElementById("mainList");
+
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script> -->
+
+<script>
+    var sidemenu = document.querySelector("nav ul");
+    var barsIcon = document.querySelector(".fa-bars");
+    var timesIcon = document.querySelector(".fa-times");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+        barsIcon.style.display = "none";
+        timesIcon.style.display = "block";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+        timesIcon.style.display = "none";
+        barsIcon.style.display = "block";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEeoGaZi9jfFlnoBJWisNMusbQbsz6c2BTDLQkQXH75q3zqAfK3O_oMDr7UzsRban5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Successfully Sent. Thank you."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
